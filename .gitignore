@@ -1,0 +1,14 @@
+# Ignore environment and database files
+.env
+accuracy_logs.db
+
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
