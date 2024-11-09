@@ -52,6 +52,13 @@ model = genai.GenerativeModel(
 # Streamlit app layout
 st.title("Enadoc Khmer ID Card Reader")
 
+# Add Disclaimer
+st.warning(
+    "Disclaimer: By using this service, you agree to upload your images at your own will and risk. "
+    "We do not store any images or information permanently. However, we shall not be held responsible "
+    "for any information leaks or security breaches that may occur. Proceed only if you understand and accept these terms."
+)
+
 # File upload section
 uploaded_file = st.file_uploader("Choose a file to upload", type=["jpg", "jpeg", "png", "pdf"])
 
